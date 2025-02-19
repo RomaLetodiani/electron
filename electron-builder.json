@@ -1,0 +1,42 @@
+{
+  "appId": "electron",
+  "files": ["dist-electron", "dist-react"],
+  "extraResources": ["dist-electron/preload.cjs", "src/assets/**"],
+  "icon": "./desktopIcon.png",
+  "mac": {
+    "category": "public.app-category.developer-tools",
+    "target": [
+      {
+        "target": "default",
+        "arch": ["universal"]
+      }
+    ],
+    "artifactName": "${productName}.${ext}",
+    "type": "distribution",
+    "hardenedRuntime": true,
+    "entitlements": "assets/entitlements.mac.plist",
+    "entitlementsInherit": "assets/entitlements.mac.plist",
+    "gatekeeperAssess": false
+  },
+  "linux": {
+    "target": "AppImage",
+    "category": "Utility"
+  },
+  "win": {
+    "target": ["portable", "msi"]
+  },
+  "protocols": [
+    {
+      "name": "Electron",
+      "schemes": ["electron"]
+    }
+  ],
+  "publish": [
+    {
+      "provider": "s3",
+      "bucket": "electron-desktop-updates",
+      "region": "us-west-2",
+      "acl": null
+    }
+  ]
+}
