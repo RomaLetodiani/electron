@@ -1,0 +1,30 @@
+.letter {
+  display: inline-block;
+  animation: wave 1.4s linear infinite;
+  color: hsl(0, 0%, 85%);
+  transition: color 0.2s ease-in-out;
+  white-space: pre;
+}
+
+@keyframes wave {
+  0%,
+  75%,
+  100% {
+    color: hsl(0, 0%, 85%);
+  }
+  82% {
+    color: hsl(0, 0%, 70%);
+  }
+  86% {
+    color: hsl(0, 0%, 45%);
+  }
+  90% {
+    color: hsl(0, 0%, 0%);
+  }
+  94% {
+    color: hsl(0, 0%, 45%);
+  }
+  98% {
+    color: hsl(0, 0%, 70%);
+  }
+}

@@ -1,0 +1,33 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: white;
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0.1);
+  padding: 6px;
+  height: 30px;
+  box-sizing: border-box;
+}
+
+.headerTitleWrapper {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.headerIcon {
+  transform: scale(0.8);
+}
+
+.btn {
+  cursor: pointer;
+  opacity: 0.8;
+  width: 20px;
+  height: 20px;
+}
+
+.empty {
+  width: 20px;
+}
