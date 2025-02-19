@@ -1,0 +1,21 @@
+.container {
+  position: relative;
+  flex: 1;
+}
+
+.input {
+  width: 100%;
+  border: none;
+  padding: 8px;
+  background-color: transparent;
+  color: white;
+  font-size: 14px;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}

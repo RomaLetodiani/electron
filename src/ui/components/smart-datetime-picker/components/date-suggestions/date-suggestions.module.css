@@ -1,0 +1,37 @@
+.suggestionsContainer {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgb(43, 43, 43);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  margin-top: 4px;
+  z-index: 1000;
+}
+
+.suggestionItem {
+  padding: 8px 12px;
+  cursor: pointer;
+  color: white;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  transition: background-color 0.2s;
+}
+
+.suggestionItem:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.suggestionItem:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.datePreview {
+  opacity: 0.7;
+}
+
+.selected {
+  background-color: rgba(255, 255, 255, 0.1);
+}
